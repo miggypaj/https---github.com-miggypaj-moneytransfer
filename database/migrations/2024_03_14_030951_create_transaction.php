@@ -25,7 +25,10 @@ return new class extends Migration
             $table->string('transaction_status');
             
             //foreign key 
-            $table->unsignedBigInteger('user_type_id');  
+            $table->unsignedBigInteger('first_name');  
+            $table->unsignedBigInteger('first_name');  
+            $table->foreign('first_name')->references('first_name') ->on('userinfo');  
+
         });
     }
 
